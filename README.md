@@ -10,5 +10,10 @@ La idea del proyecto es desarrollar un encriptador de palabras. Su función es t
  
  Y viceversa.
 
-Debía contener un botón para copiar el texto encriptado/desencriptado y uno para vaciar esa caja de resultado. Además, tiene sus respectivas alertas de error para
-cuando no se cumplen los requisitos del texto o se deja el área de input vacía.
+<h2> Requisitos </h2>
+- Debe funcionar solo con letras minúsculas
+- No deben ser utilizados letras con acentos ni caracteres especiales
+- Debe ser posible convertir una palabra para la versión encriptada también devolver una palabra encriptada para su versión original.
+
+<h2> Extras: </h2>
+- Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
