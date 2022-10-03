@@ -1,5 +1,5 @@
 # challenge-encriptador
-Challenge propuesto por el Programa ONE: Oracle Next Education
+<h1> Challenge propuesto por el Programa ONE: Oracle Next Education </h1>
 
 La idea del proyecto es desarrollar un encriptador de palabras. Su función es tanto "encriptar" como "desencriptar" y lo que se modifica son las vocales:
  La letra "e" es convertida para "enter"
