@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head lang="es">
+    <meta charset="UTF-8">
+    <title>Encriptador de Texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link href='https://css.gg/danger.css' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/3c34634051.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body id="root">
+    <header>
+
+      <img class="logoAlura" id="logoAlura" src="imagenes/LogoAlura.png">
+      <h1 class="titulo" id="titulo">Encriptador de Texto</h1>
+      
+      <button class="cambiarTema" id="cambiarTema" value="pink">Cambiar tema</button>
+    </header>
+
+    <main>
+      <section id="userSection">
+        <form class="areaTextoUser">
+          <textarea name="textArea" class="textoUser" id="textoUser" spellcheck="false" placeholder="Ingrese el texto aquí."></textarea>
+        </form>
+        <div class="alerta">
+          <p class="alertaTexto" id="alertaTexto">
+            <i class="gg-danger" id="iconoAlerta"></i>
+            Sólo letras minúsculas y sin tildes.
+          </p>
+          <div class="botonesDiv">
+            <button class="boton" id="boton1" onclick="btnEncriptar()">Encriptar</button>
+            <button class="boton" id="boton2" onclick="btnDesencriptar()">Desencriptar</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="resultUserSection">
+        <div id="mostrarMensaje">
+          <figure class="imagenMensaje" id="imagenMensaje">
+            <img id="imagen" src="imagenes/lupaojo.png" alt="Desencriptando su mensaje">
+            <div class="divMensaje">
+              <h2 class="tituloMensaje">No se ha encontrado ningún mensaje</h2>
+              <p class="parrafoMensaje">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+          </figure>
+        </div>
+
+        <div id="mensajeEncriptado" class="mostrarMensaje" style="display: none">
+          <div class="textoArea">
+            <button class="botonCopiar" id="botonCopiar1" onclick="copiar()">
+              <i class="fa-regular fa-clipboard"></i>
+            </button>
+            <p class="textoResultado" id="textoEncriptado"></p>
+            
+          </div>
+          <div class="botonesRefrescarDiv">
+            <button class="botonRefrescar" id="botonRefrescar1" onclick="refrescar()">Refrescar</button>
+          </div>
+        </div>
+
+        <div id="mensajeDesencriptado" class="mostrarMensaje" style="display: none">
+          <div class="textoArea">
+            <p class="textoResultado" id="textoDesencriptado"></p>
+            <button class="botonCopiar" id="botonCopiar2" onclick="copiar2()">
+              <i class="fa-regular fa-clipboard"></i>
+            </button>
+          </div>
+          <div class="botonesRefrescarDiv">
+            <button class="botonRefrescar" id="botonRefrescar2" onclick="refrescar()">Refrescar</button>
+          </div>
+        </div>
+        
+        
+
+      </section>
+    </main>
+    <footer>
+      <h2 class="footerTexto">Challenge creado por <a href="https://www.aluracursos.com/" target="_blank">Alura</a> y desarrollado por <a href="https://www.instagram.com/tortadeangel/" target="_blank">Iara Auer</a></h2>
+    </footer>
+  </body>
+
+  
+
+  <div class="alertaPopUp" id="alertaPopUp" style="display: none">
+    <div class="contenidoPopUp" id="alertaPopUp">
+      <p class="iconPopUp"><i class="fa-solid fa-circle-exclamation"></i></p>
+      <h2 class="ingresarTextoPopUp" id="ingresarTextoPopUp" style="display: none">Debes ingresar un texto</h2>
+      <h2 class="caracteresEspecialesError" id="caracteresEspecialesError" style="display: none">Solo debes ingresar letras minúsculas y sin tildes</h2>
+      <button class="botonCerrarPopUp" id="botonCerrarPopUp" onclick="btnCerrarPopUp()">Cerrar</button>
+    </div>
+  </div>
+  
+  <script src="app.js">
+
+  </script>
+  </html>
